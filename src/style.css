@@ -1,0 +1,154 @@
+/* 
+   ----BODY---- 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    background-color: #f7f7f7;
+}
+
+/* 
+   ----HEADER---- 
+*/
+.flex h1 {
+    text-align: center;
+    margin: 3.75rem 0;
+    color: #111111;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.header-nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.812rem;
+}
+
+.header-nav-ul li {
+    list-style: none;
+    font-weight: 500;
+    margin-bottom: 3.75rem;
+}
+
+/* 
+   ----MAIN---- 
+*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+    column-gap: 3rem;
+}
+
+/* 
+   ----box1----
+*/
+.grid-box1 {
+    display: grid;
+    align-self: flex-start;
+    align-content: center;
+    height: 100%;
+}
+
+.grid-box1 h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #111111;
+    text-align: right;
+}
+.grid-box1 p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #111111;
+    margin: 1.375rem 0;
+    text-align: right;
+}
+
+.grid-box1 a {
+    background-color: #b40000;
+    text-decoration: none;
+    color: white;
+    padding: 0.937rem 1.875rem;
+    border-radius: 0.4rem;
+    justify-self: end;
+    text-align: right;
+    font-weight: 700;
+}
+
+/* 
+   ----box2----
+*/
+
+.grid-box2 img {
+    max-width: 100%;
+    border-radius: 0.4rem;
+}
+
+/* 
+   ----box3----
+*/
+
+.grid-box3 {
+    display: flex;
+    align-items: center;
+}
+
+.grid-box3 h2 {
+    font-size: 3.875rem;
+    text-align: right;
+    color: #c6c6c6;
+    text-align: right;
+    font-weight: 700;
+}
+
+/* 
+   ----box4----
+*/
+
+.box4 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 30px;
+}
+
+.box4 img {
+    width: 1.562rem;
+    margin-right: 1rem;
+    margin-left: 1.562rem;
+}
+
+.box4 p {
+    grid-column: 2;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.box4 .p1 {
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+/* 
+   ----footer----
+ */
+
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: #c6c6c6;
+    padding: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
