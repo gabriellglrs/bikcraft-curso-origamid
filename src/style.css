@@ -9,18 +9,30 @@
 }
 
 html {
-    background-color: #f7f7f7;
+    background-color: #dcdcdc;
 }
 
 /* 
    ----HEADER---- 
 */
 .flex h1 {
+    position: relative;
     text-align: center;
     margin: 3.75rem 0;
     color: #111111;
     font-weight: 900;
     text-transform: uppercase;
+}
+
+.flex h1::before {
+    content: "";
+    background: #b40000;
+    width: 18px;
+    height: 6px;
+    display: inline-block;
+    margin-right: 5px;
+    z-index: -1;
+    position: absolute;
 }
 
 .header-nav-ul {
@@ -34,6 +46,15 @@ html {
     list-style: none;
     font-weight: 500;
     margin-bottom: 3.75rem;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color: #b40000;
+    border: 2px solid black;
+    transition: 0.2s;
 }
 
 /* 
@@ -46,11 +67,29 @@ html {
     max-width: 1000px;
     margin: 0 auto;
     column-gap: 3rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+/* 
+   ----grid elemento----
+*/
+
+.grid-elemento {
+    display: block;
+    position: absolute;
+    background-color: #b40000;
+    width: 40px;
+    height: 5px;
+    right: 455px;
+    margin-top: 30px;
 }
 
 /* 
    ----box1----
 */
+
 .grid-box1 {
     display: grid;
     align-self: flex-start;
@@ -65,6 +104,7 @@ html {
     color: #111111;
     text-align: right;
 }
+
 .grid-box1 p {
     font-size: 1.25rem;
     font-weight: 400;
@@ -84,6 +124,10 @@ html {
     font-weight: 700;
 }
 
+.grid-box1 a:hover {
+    background-color: #850000;
+}
+
 /* 
    ----box2----
 */
@@ -91,6 +135,8 @@ html {
 .grid-box2 img {
     max-width: 100%;
     border-radius: 0.4rem;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
 }
 
 /* 
@@ -114,40 +160,53 @@ html {
    ----box4----
 */
 
-.box4 {
+.grid-box4 .box4 {
     display: grid;
     grid-template-columns: auto 1fr;
     margin-top: 30px;
 }
 
-.box4 img {
+.grid-box4 .box4 img {
     width: 1.562rem;
     margin-right: 1rem;
     margin-left: 1.562rem;
+    margin-top: 10px;
 }
 
-.box4 p {
+.grid-box4 .box4 p {
     grid-column: 2;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 30px;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
-.box4 .p1 {
+.grid-box4 .box4 .p1 {
     font-weight: 400;
     text-transform: lowercase;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+
+.grid-box4 .box4:nth-child(odd) {
+    background-color: #d3d3d3;
+    border-top-left-radius: 5px;
 }
 
 /* 
    ----footer----
  */
 
+footer {
+    width: 100%;
+}
+
 footer p {
     text-align: center;
     margin-top: 30px;
     font-size: 20px;
-    background-color: #c6c6c6;
+    background-color: white;
     padding: 15px;
     font-weight: 500;
     text-transform: capitalize;
