@@ -47,14 +47,12 @@ html {
     font-weight: 500;
     margin-bottom: 3.75rem;
     padding: 10px 20px;
-    background-color: white;
+
     border-radius: 5px;
 }
 
 li:hover {
-    background-color: #b40000;
-    border: 2px solid black;
-    transition: 0.2s;
+    border: 2px solid #b40000;
 }
 
 /* 
@@ -164,6 +162,8 @@ li:hover {
     display: grid;
     grid-template-columns: auto 1fr;
     margin-top: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .grid-box4 .box4 img {
@@ -192,6 +192,10 @@ li:hover {
 .grid-box4 .box4:nth-child(odd) {
     background-color: #d3d3d3;
     border-top-left-radius: 5px;
+}
+
+.grid-box4 .box4:hover {
+    border-left: 5px solid #b40000;
 }
 
 /* 
