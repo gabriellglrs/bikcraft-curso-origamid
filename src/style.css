@@ -9,7 +9,7 @@
 }
 
 html {
-    background-color: #dcdcdc;
+    background-color: white;
 }
 
 /* 
@@ -47,12 +47,13 @@ html {
     font-weight: 500;
     margin-bottom: 3.75rem;
     padding: 10px 20px;
-
+    border: 2px solid transparent;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 li:hover {
-    border: 2px solid #b40000;
+    border-color: #b40000;
 }
 
 /* 
@@ -149,7 +150,7 @@ li:hover {
 .grid-box3 h2 {
     font-size: 3.875rem;
     text-align: right;
-    color: #c6c6c6;
+    color: #c0c0c0;
     text-align: right;
     font-weight: 700;
 }
@@ -164,6 +165,7 @@ li:hover {
     margin-top: 30px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-left: 5px solid transparent;
 }
 
 .grid-box4 .box4 img {
@@ -190,7 +192,7 @@ li:hover {
 }
 
 .grid-box4 .box4:nth-child(odd) {
-    background-color: #d3d3d3;
+    background-color: #dcdcdc;
     border-top-left-radius: 5px;
 }
 
@@ -200,17 +202,17 @@ li:hover {
 
 /* 
    ----footer----
- */
+*/
 
 footer {
     width: 100%;
+    background-color: #dcdcdc;
 }
 
 footer p {
     text-align: center;
     margin-top: 30px;
     font-size: 20px;
-    background-color: white;
     padding: 15px;
     font-weight: 500;
     text-transform: capitalize;
