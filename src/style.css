@@ -61,14 +61,23 @@ li:hover {
 */
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     max-width: 1000px;
     margin: 0 auto;
-    column-gap: 3rem;
     background-color: white;
     border-radius: 0.5rem;
     position: relative;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
 }
 
 /* 
@@ -79,10 +88,11 @@ li:hover {
     display: block;
     position: absolute;
     background-color: #b40000;
-    width: 40px;
+    width: 80px;
     height: 5px;
-    right: 455px;
+    right: 434px;
     margin-top: 30px;
+    border-radius: 5px;
 }
 
 /* 
@@ -105,11 +115,11 @@ li:hover {
 }
 
 .grid-box1 p {
-    font-size: 1.25rem;
     font-weight: 400;
     color: #111111;
     margin: 1.375rem 0;
     text-align: right;
+    font-size: 1.25rem;
 }
 
 .grid-box1 a {
@@ -216,4 +226,86 @@ footer p {
     padding: 15px;
     font-weight: 500;
     text-transform: capitalize;
+}
+
+/* 
+  ----responsividade----
+*/
+
+@media (max-width: 1000px) {
+    .grid-elemento {
+        display: none;
+    }
+
+    .section2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-box3 {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .grid-box3 h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 830px) {
+    .grid-box1 p {
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .flex h1 {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .header-nav-ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .header-nav-ul li {
+        margin: 0;
+    }
+    .section1 {
+        grid-template-columns: 1fr;
+    }
+    .grid-box1 h1 {
+        justify-self: center;
+        margin-top: 22px;
+        font-size: 1.5rem;
+    }
+    .grid-box1 a {
+        justify-self: center;
+        margin-bottom: 5px;
+    }
+    .grid-box3 h2 {
+        font-size: 2.4rem;
+    }
+
+    .section2 .grid-box4 p {
+        font-size: 1rem;
+    }
+
+    .section2 .grid-box4 .p1 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .grid-box1 a {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .grid-box3 h2 {
+        font-size: 1.6rem;
+    }
 }
